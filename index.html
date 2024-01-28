@@ -20,12 +20,14 @@
   <link rel="stylesheet" href="STYLES\custom-cursor.css">
   <link rel="stylesheet" href="STYLES\Scroll-up-button.css">
   <link rel="stylesheet" href="STYLES\footer.css">
+  <link rel="stylesheet" href="STYLES\RESPONSIVE_STYLES\Nav_Responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script defer src="SCRIPT\script.js"></script>
   <script defer src="SCRIPT\dark-mode.js"></script>
   <script defer src="SCRIPT\projects-section.js"></script>
   <script defer src="SCRIPT\scroll.js"></script>
+  <script defer src="SCRIPT\Skill-scroll.js"></script>
 
 </head>
 
@@ -37,16 +39,16 @@
         <a href="#Home">
           <li>Home</li>
         </a>
-        <a href="#About">
+        <a href="#About-Section-Start">
           <li>About Me</li>
         </a>
-        <a href="#Skills">
+        <a href="#Skills-Section-Start">
           <li>Skills</li>
         </a>
-        <a href="#Projects">
+        <a href="#Project-Section-Start">
           <li>Projects</li>
         </a>
-        <a href="#Contact-Me">
+        <a href="#Contact-Section-Start">
           <li>Contact Me</li>
         </a>
       </ul>
@@ -57,7 +59,6 @@
 
   <!-- Scroll up button -->
   <a href="#Home"><button class="Scroll-up-button hidden-element scroll-up-button-animation"><i class="fa-solid fa-arrow-up"></i></button></a>
-
 
   <section id="Home" class="section-content-container home">
     <div class="home-section">
@@ -100,9 +101,14 @@
       </div>
     </div>
   </section>
-  <hr>
+
+  <!-- <hr> -->
+  <div id="About-Section-Start" style="height: 70px;"><hr></div>
+
   <section id="About" class="section-content-container">
-    <h1>About Me</h1>
+    <div class="about-heading">
+      <h1>About Me</h1>
+    </div>
     <div>
       <img class="about-pic-section" src="ASSETS/profilephoto.jpeg" alt="">
       <div class="about-info-section">
@@ -152,14 +158,23 @@
         <div>
         </div>
       </div>
-
     </div>
+
   </section>
 
-  <hr>
+  <!-- <hr> -->
+  <div id="Skills-Section-Start" style="height: 70px;"><hr></div>
 
   <section id="Skills" class="section-content-container skills-specific-container">
-    <h1>Skills</h1>
+    
+    <div>
+      <h1>Skills</h1>
+    </div>
+    <div class="Skill-Button">
+      <button>Machine Learning</button>
+      <button>Game Development</button>
+    </div>
+    
     <div class="Skill-panel">
       <div class="skills-containers height-auto-and-centered container">
 
@@ -229,9 +244,6 @@
 
       </div>
 
-      <div class="skills-Info">
-
-      </div>
       <p>
         <span style="font-weight: bold; font-size: 25px;">&#x2022; </span>Proficient AIML (Artificial Intelligence
         Markup Language) developer with expertise in Python.
@@ -253,13 +265,11 @@
         Well-equipped to tackle complex challenges and drive innovation in the dynamic field of data science.
       </p>
     </div>
-
-
-    </div>
-    </div>
+    
   </section>
 
-  <hr>
+  <!-- <hr> -->
+  <div id="Project-Section-Start" style="height: 70px;"><hr></div>
 
   <section id="Projects" class="section-content-container project-specific-container">
     <h1>Projects</h1>
@@ -273,19 +283,22 @@
       
       ">Deep Learning</button>
     </div>
+    
     <div class="projects-containers height-auto-and-centered">
+      
       <div class="black-center-line">
 
       </div>
     </div>
+    <a href="https://github.com/AI-ML-DL-EXPERT?tab=repositories" target="_blank"><button class="Load-More-Projects-btn">Load More</button></a>
   </section>
 
-  <hr>
+  <!-- <hr> -->
+  <div id="Contact-Section-Start" style="height: 70px;"><hr></div>
 
   <section id="Contact-Me" class="section-content-container">
     <h1>Contact Me</h1>
     <div class="contacts-info-container">
-
       <p>
         Hello there,
         <br><br>

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 70px;
+  height: 10vh;
   /* background-color: rgb(220, 215, 250); */
   background-color: var(--primary-color);
 
@@ -17,9 +17,13 @@
   width: 100%;
   /* background-color: rebeccapurple; */
 
-  z-index: 1;
-
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+  /* opacity: 0; */
 }
+/* .navigation-bar:hover{
+  opacity: 1;
+} */
 
 .right-nav-section{
   width: 50vw;
@@ -45,7 +49,7 @@
   transition: color .2s ease-in;
 }
 .left-nav-section:hover{
-  color: blueviolet;
+  color: var(--Button);
 }
 
 .right-nav-section ul li{
@@ -54,7 +58,7 @@
   transition: color .2s ease-in;
 }
 .right-nav-section ul li:hover{
-  color: blueviolet;
+  color: var(--Button);
 }
 
 
